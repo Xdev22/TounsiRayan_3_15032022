@@ -1,0 +1,19 @@
+{
+  "name": "tounsirayan_3_15032022",
+  "version": "1.0.0",
+  "description": "Repository du Projet_3 qui consiste à integrer une maquette en HTML/CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xdev22/TounsiRayan_3_15032022.git"
+  },
+  "author": "Tounsi Rayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xdev22/TounsiRayan_3_15032022/issues"
+  },
+  "homepage": "https://github.com/Xdev22/TounsiRayan_3_15032022#readme"
+}

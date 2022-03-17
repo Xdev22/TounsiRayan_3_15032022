@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,4FAAI;AACZ,OAAO,CAAC,sEAAI",
+    "sources": [
+        "polices.scss"
+    ],
+    "names": [],
+    "file": "polices.css"
+}
