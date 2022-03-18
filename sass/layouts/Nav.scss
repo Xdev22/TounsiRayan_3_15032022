@@ -1,0 +1,27 @@
+/*nav*/
+.main__nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 20px 0;
+    width: 100%;
+    &__i{
+        margin-right: 10px;
+    }
+}
+
+/*barre de recherche*/
+.main__nav__recherche{
+    & input{
+        height: 20px;
+        width: 120px;
+        border: none;
+        background-color: #eaeaea;
+        font-weight: bold;
+        &:focus{
+            outline: none;
+            border: none;
+        }
+    }
+}

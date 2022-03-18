@@ -1,0 +1,22 @@
+footer{
+    background-color: #353535;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 0 20px 15px;
+    a{
+        color: white;
+    }
+}
+
+.footer__service{
+    margin-bottom: 10px;
+    &__i1{
+        font-size:15px;
+        padding-right: 7px;
+    }
+    &__i2{
+        font-size:12px;
+        padding-right: 5px;
+
+    }
+}

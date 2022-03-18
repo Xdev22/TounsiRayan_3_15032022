@@ -1,64 +1,8 @@
-@import "../sass/variables.scss";
-@import "../utils/mixins.scss";
-@import "../bases/polices.scss";
-@import "../bases/base.scss";
-
-
-/*header*/
-
-header{
-    text-align: center;
-    position: relative;
-    box-shadow: 0px 4px 5px #cecece
-}
-
-.logo{
-    font-family: 'Shrikhand', sans-serif;
-}
-
-.logo--header{
-    font-size: 38px;
-    width: 250px;
-    text-align: center;
-    color: #353535;
-  }
-  
-  
-  /*main*/
-
-  main{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-  }
-
-/*nav*/
-.main__nav{
+main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #eaeaea;
-    padding: 20px 0;
     width: 100%;
-    &__i{
-        margin-right: 10px;
-    }
-}
-
-/*barre de recherche*/
-.main__nav__recherche{
-    & input{
-        height: 20px;
-        width: 120px;
-        border: none;
-        background-color: #eaeaea;
-        font-weight: bold;
-        &:focus{
-            outline: none;
-            border: none;
-        }
-    }
 }
 
 /*Section présentation*/
@@ -186,29 +130,4 @@ main img{
 
 main a{
     color: #353535;
-}
-
-
-/*footer*/
-footer{
-    background-color: #353535;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px 0 20px 15px;
-    a{
-        color: white;
-    }
-}
-
-.footer__service{
-    margin-bottom: 10px;
-    &__i1{
-        font-size:15px;
-        padding-right: 7px;
-    }
-    &__i2{
-        font-size:12px;
-        padding-right: 5px;
-
-    }
 }
