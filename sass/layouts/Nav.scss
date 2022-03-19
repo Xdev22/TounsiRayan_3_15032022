@@ -1,5 +1,5 @@
 /*nav*/
-.main__nav{
+.nav{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,9 +10,9 @@
         margin-right: 10px;
     }
 }
-
+  
 /*barre de recherche*/
-.main__nav__recherche{
+.nav__recherche{
     & input{
         height: 20px;
         width: 120px;
