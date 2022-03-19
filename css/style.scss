@@ -9,6 +9,7 @@
 @import "../sass/pages/resto.scss";
 
 
+
 /*Header page resto*/
 
 .header__resto{
@@ -21,29 +22,34 @@
     i{
         font-size: 20px;
     }
+    &__banniere{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    z-index: 0;
+    }
 }
 
 /*main resto*/
 
 .main__resto{
     background-color: #f2f2f2;
-    &__banniere{
+    position: relative;
+    z-index: 1;
+    margin-top: -40px;
+    border-radius: 40px 40px 0 0;
     width: 100%;
-    height: 84vh;
-    object-fit: cover;
-    }
-    &__titre{
+    &__heading{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         font-family: "Shrikhand", sans-serif;
         width: 100%;
+        padding: 20px 30px 10px 30px;
         h1{
-            position: relative;
-            margin-left: 20px;
+            padding-right: 40px;
+            font-size: 1.8rem;
         }
-        .coeur{
-            position:absolute;
-            right: 5px;
-        }
+        
     }
 }

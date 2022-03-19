@@ -290,78 +290,39 @@ footer a {
 
 .header__resto__banniere {
   width: 100%;
-  height: 84vh;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: 0;
 }
 
 /*main resto*/
 .main__resto {
   background-color: #f2f2f2;
+  position: relative;
+  z-index: 1;
+  margin-top: -40px;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
 }
 
-.main__resto__titre {
+.main__resto__heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-family: "Shrikhand", sans-serif;
   width: 100%;
+  padding: 20px 30px 10px 30px;
 }
 
-.main__resto__titre h1 {
-  position: relative;
-  margin-left: 20px;
-}
-
-.main__resto__titre .coeur {
-  position: absolute;
-  right: 5px;
-}
-
-/*Header page resto*/
-.header__resto__nav__i {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-}
-
-.header__resto i {
-  font-size: 20px;
-}
-
-/*main resto*/
-.main__resto {
-  background-color: #f2f2f2;
-}
-
-.main__resto__banniere {
-  width: 100%;
-  height: 84vh;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.main__resto__titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Shrikhand", sans-serif;
-  width: 100%;
-}
-
-.main__resto__titre h1 {
-  position: relative;
-  margin-left: 20px;
-}
-
-.main__resto__titre .coeur {
-  position: absolute;
-  right: 5px;
+.main__resto__heading h1 {
+  padding-right: 40px;
+  font-size: 1.8rem;
 }
 /*# sourceMappingURL=style.css.map */
