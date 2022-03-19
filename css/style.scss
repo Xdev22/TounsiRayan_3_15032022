@@ -5,6 +5,45 @@
 @import "../sass/layouts/Nav.scss";
 @import "../sass/layouts/main.scss";
 @import "../sass/layouts/footer.scss";
+@import "../sass/components/coeur.scss";
 @import "../sass/pages/resto.scss";
 
 
+/*Header page resto*/
+
+.header__resto{
+
+    &__nav__i{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    i{
+        font-size: 20px;
+    }
+}
+
+/*main resto*/
+
+.main__resto{
+    background-color: #f2f2f2;
+    &__banniere{
+    width: 100%;
+    height: 84vh;
+    object-fit: cover;
+    }
+    &__titre{
+        display: flex;
+        align-items: center;
+        font-family: "Shrikhand", sans-serif;
+        width: 100%;
+        h1{
+            position: relative;
+            margin-left: 20px;
+        }
+        .coeur{
+            position:absolute;
+            right: 5px;
+        }
+    }
+}

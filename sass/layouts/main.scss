@@ -1,3 +1,5 @@
+@import "../abstracts/variables.scss";
+
 main{
     display: flex;
     flex-direction: column;
@@ -117,16 +119,11 @@ main{
         &__h3{
             margin: 10px 0 0 0;
         }
-        &__i{
-            font-size: 25px;
-        }
         &__loc{
             margin: 5px 0;
         }
-        
     }
 }
-
 
 main a{
     color: #353535;
