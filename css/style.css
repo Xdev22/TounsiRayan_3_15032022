@@ -89,6 +89,10 @@ header--index {
   width: 100%;
 }
 
+.main_index a {
+  color: #353535;
+}
+
 /*Section présentation*/
 .main__section__presentation {
   display: -webkit-box;
@@ -247,10 +251,6 @@ header--index {
   margin: 5px 0;
 }
 
-.main_index a {
-  color: #353535;
-}
-
 footer {
   background-color: #353535;
   color: white;
@@ -283,6 +283,7 @@ footer a {
 /*Section menu*/
 .main__resto__entrees {
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .main__resto__entrees h2 {
@@ -320,6 +321,10 @@ footer a {
 }
 
 /*Header page resto*/
+.header__resto a {
+  color: black;
+}
+
 .header__resto__nav__i {
   position: absolute;
   left: 20px;
@@ -332,7 +337,7 @@ footer a {
 
 .header__resto__banniere {
   width: 100%;
-  height: 65vh;
+  height: 60vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -345,6 +350,16 @@ footer a {
   padding: 0 20px 20px 20px;
   margin-top: -50px;
   border-radius: 40px 40px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main__resto__heading {
@@ -364,5 +379,26 @@ footer a {
 .main__resto__heading h1 {
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+.btn_commander {
+  height: 50px;
+  width: 215px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px #9c9c9c;
+          box-shadow: 0px 0px 6px #9c9c9c;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.btn_commander:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=style.css.map */

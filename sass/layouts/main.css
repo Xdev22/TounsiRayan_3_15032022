@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+.main_index a {
+  color: #353535;
+}
+
 /*Section présentation*/
 .main__section__presentation {
   display: -webkit-box;
@@ -169,9 +173,5 @@
 
 .main__cartes__carte__description__loc {
   margin: 5px 0;
-}
-
-.main_index a {
-  color: #353535;
 }
 /*# sourceMappingURL=main.css.map */
