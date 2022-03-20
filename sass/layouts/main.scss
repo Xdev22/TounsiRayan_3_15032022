@@ -1,6 +1,6 @@
 @import "../abstracts/variables.scss";
 
-main{
+.main_index{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,6 @@ main{
     text-align: center;
     padding: 20px 0 20px 0;
     width: 100%;
-    height: 200px;
     background-color:#f6f6f6 ;
     &__h1{
         width: 80%;
@@ -49,7 +48,7 @@ main{
 
 .main__fonctionnement{
     width: 90%;    
-    margin-top: 20px;
+    padding: 30px 0;
     &__fonction{
         display: flex;
         align-items: center;
@@ -125,6 +124,9 @@ main{
     }
 }
 
-main a{
-    color: #353535;
+.main_index{
+    a{
+     color: #353535;
+    }
+
 }
