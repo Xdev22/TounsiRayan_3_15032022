@@ -280,6 +280,45 @@ footer a {
   font-size: 25px;
 }
 
+/*Section menu*/
+.main__resto__entrees {
+  margin-bottom: 35px;
+}
+
+.main__resto__entrees h2 {
+  font-size: large;
+  font-weight: 300;
+}
+
+.main__resto__entrees .main__resto__border {
+  border-bottom: 3px solid #99E2D0;
+}
+
+.main__resto__entrees__carte {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 100%;
+  border-radius: 20px;
+  padding: 0px 30px 0 10px;
+  margin-bottom: 10px;
+}
+
+.main__resto__entrees__carte__description h3 {
+  margin-bottom: 0;
+}
+
+.main__resto__entrees__carte__description p {
+  margin-top: 0.1rem;
+}
+
 /*Header page resto*/
 .header__resto__nav__i {
   position: absolute;
@@ -325,44 +364,5 @@ footer a {
 .main__resto__heading h1 {
   font-size: 1.8rem;
   font-weight: 500;
-}
-
-/*Section entrées*/
-.main__resto__entrees {
-  margin-bottom: 35px;
-}
-
-.main__resto__entrees h2 {
-  font-size: large;
-  font-weight: 300;
-}
-
-.main__resto__entrees .main__resto__border {
-  border-bottom: 3px solid #99E2D0;
-}
-
-.main__resto__entrees__carte {
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  width: 100%;
-  border-radius: 20px;
-  padding: 0px 30px 0 10px;
-  margin-bottom: 10px;
-}
-
-.main__resto__entrees__carte__description h3 {
-  margin-bottom: 0;
-}
-
-.main__resto__entrees__carte__description p {
-  margin-top: 0.1rem;
 }
 /*# sourceMappingURL=style.css.map */
