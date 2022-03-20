@@ -6,59 +6,6 @@
 @import "../sass/layouts/main.scss";
 @import "../sass/layouts/footer.scss";
 @import "../sass/components/coeur.scss";
-@import "../sass/components/menu_resto.scss";
 @import "../sass/pages/resto.scss";
 
 
-
-
-/*Header page resto*/
-
-.header__resto{
-    a{
-        color: black;
-    }
-
-    &__nav__i{
-        position: absolute;
-        left: 20px;
-        top: 20px;
-    }
-    i{
-        font-size: 20px;
-    }
-    &__banniere{
-    width: 100%;
-    height: 60vh;
-    object-fit: cover;
-    }
-}
-
-/*main resto*/
-
-.main__resto{
-    background-color: #f2f2f2;
-    position: relative;
-    width: 100%;
-    padding: 0 20px 20px 20px;
-    margin-top: -50px;
-    border-radius: 40px 40px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__heading{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: "Shrikhand", sans-serif;
-        width: 100%;
-        h1{
-            font-size: 1.8rem;
-            font-weight: 500;
-        } 
-    }
-}
-
-.btn_commander{
-    @include btn_commander;
-}
