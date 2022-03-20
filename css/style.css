@@ -280,7 +280,6 @@ footer a {
   font-size: 25px;
 }
 
-/*Section menu*/
 /*Header page resto*/
 .header__resto a {
   color: black;
@@ -357,6 +356,7 @@ footer a {
   border-bottom: 3px solid #99E2D0;
 }
 
+/*Section menu*/
 .main__resto__entrees__carte {
   background-color: white;
   display: -webkit-box;
