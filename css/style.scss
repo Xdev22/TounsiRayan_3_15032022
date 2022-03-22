@@ -9,3 +9,70 @@
 @import "../sass/pages/resto.scss";
 
 
+/*Section menu*/
+.main__resto__entrees__carte{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100%;
+    height: 75px;
+    border-radius: 20px;    
+    padding: 0px 0px 0 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &__description{
+        padding-left: 10px;
+        h3{
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0.1rem;
+        }
+    }
+    &:hover{
+        .main__resto__check{
+            display: block;
+            animation: slidinright 700ms ease-in-out forwards;        
+        }
+    }
+}
+
+.main__resto__prix{
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.btn_commander{
+    @include btn_commander;
+}
+
+.main__resto__check{
+    display: none;
+    text-align: center;
+    height: 100%;
+    background-color: $color-tertiary;
+    i{
+        font-size: 40px;
+        color: white;
+        margin-top: 20px;
+        animation: rotate 700ms;
+
+    }
+}
+
+@keyframes slidinright {
+    from{width: 0;}
+    to{width: 100px;}
+    
+}
+
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to  {transform: rotate(360deg);}
+  }
+
+

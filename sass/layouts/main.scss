@@ -53,10 +53,13 @@
         transition: 500ms;
         &:hover{
             background-color: lighten($color-primary,35);
+            i{
+                color: $color-primary;
+            }
         }
-    }
-    &__i{
-        padding: 0 20px 0 10px;
+        &__i{
+            padding: 0 20px 0 10px;
+        }
     }
 }
 
@@ -100,6 +103,13 @@
         height: 205px;
         object-fit: cover;
         border-radius: 20px 20px 0 0px;
+        z-index: 0;
+    }
+    &__new{
+        z-index: 1;
+        position: absolute;
+        top:20px
+
     }
     &__description{
         display: flex;

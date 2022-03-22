@@ -1,0 +1,76 @@
+/*Header page resto*/
+.header__resto a {
+  color: black;
+}
+
+.header__resto__nav__i {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.header__resto i {
+  font-size: 20px;
+}
+
+.header__resto__banniere {
+  width: 100%;
+  height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*main resto*/
+.main__resto {
+  background-color: #f2f2f2;
+  position: relative;
+  width: 100%;
+  padding: 0 20px 50px 20px;
+  margin-top: -50px;
+  border-radius: 40px 40px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__resto__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Shrikhand", sans-serif;
+  width: 100%;
+}
+
+.main__resto__heading h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/*main resto sections*/
+.main__resto__entrees {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.main__resto__entrees h2 {
+  font-size: large;
+  font-weight: 300;
+}
+
+.main__resto__entrees .main__resto__border {
+  border-bottom: 3px solid #99E2D0;
+}
+/*# sourceMappingURL=resto.css.map */

@@ -171,7 +171,11 @@ header--index {
   background-color: #f2eafb;
 }
 
-.main__fonctionnement__i {
+.main__fonctionnement__fonction:hover i {
+  color: #9356DC;
+}
+
+.main__fonctionnement__fonction__i {
   padding: 0 20px 0 10px;
 }
 
@@ -224,6 +228,13 @@ header--index {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0px;
+  z-index: 0;
+}
+
+.main__cartes__carte__new {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
 }
 
 .main__cartes__carte__description {
@@ -365,13 +376,21 @@ footer a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 75px;
   border-radius: 20px;
-  padding: 0px 30px 0 10px;
+  padding: 0px 0px 0 10px;
   margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.main__resto__entrees__carte__description {
+  padding-left: 10px;
 }
 
 .main__resto__entrees__carte__description h3 {
@@ -380,6 +399,17 @@ footer a {
 
 .main__resto__entrees__carte__description p {
   margin-top: 0.1rem;
+}
+
+.main__resto__entrees__carte:hover .main__resto__check {
+  display: block;
+  -webkit-animation: slidinright 700ms ease-in-out forwards;
+          animation: slidinright 700ms ease-in-out forwards;
+}
+
+.main__resto__prix {
+  margin-right: 1rem;
+  margin-top: 2rem;
 }
 
 .btn_commander {
@@ -401,5 +431,60 @@ footer a {
   opacity: 0.9;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.main__resto__check {
+  display: none;
+  text-align: center;
+  height: 100%;
+  background-color: #99E2D0;
+}
+
+.main__resto__check i {
+  font-size: 40px;
+  color: white;
+  margin-top: 20px;
+  -webkit-animation: rotate 700ms;
+          animation: rotate 700ms;
+}
+
+@-webkit-keyframes slidinright {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@keyframes slidinright {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */

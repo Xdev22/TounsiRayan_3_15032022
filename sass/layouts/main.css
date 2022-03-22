@@ -95,7 +95,11 @@
   background-color: #f2eafb;
 }
 
-.main__fonctionnement__i {
+.main__fonctionnement__fonction:hover i {
+  color: #9356DC;
+}
+
+.main__fonctionnement__fonction__i {
   padding: 0 20px 0 10px;
 }
 
@@ -148,6 +152,13 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 20px 20px 0 0px;
+  z-index: 0;
+}
+
+.main__cartes__carte__new {
+  z-index: 1;
+  position: absolute;
+  top: 20px;
 }
 
 .main__cartes__carte__description {
