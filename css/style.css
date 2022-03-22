@@ -192,6 +192,7 @@ header--index {
 .main__cartes {
   background-color: #f6f6f6;
   width: 100%;
+  /*boite qui contient les cartes*/
 }
 
 .main__cartes__h2 {
@@ -212,6 +213,7 @@ header--index {
   margin-bottom: 40px;
 }
 
+/*carte*/
 .main__cartes__carte {
   width: 90%;
   height: 285px;
@@ -262,6 +264,38 @@ header--index {
   margin: 5px 0;
 }
 
+/*Modifications version PC*/
+@media screen and (min-width: 992px) {
+  /*boite qui contient les fonctions de fonctionnement*/
+  .main__fonctionnement__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .main__fonctionnement__fonction {
+    width: 30%;
+  }
+  /*boite qui contient les cartes restaurants*/
+  .main__cartes__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 35px;
+  }
+  .main__cartes__carte {
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -285,6 +319,39 @@ footer a {
 .footer__service__i2 {
   font-size: 12px;
   padding-right: 5px;
+}
+
+@media screen and (min-width: 769px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 100%;
+    padding: 0 90px 20px 90px;
+  }
+}
+
+.footer__logo {
+  font-size: xx-large;
+  padding: 20px 0 35px 0;
 }
 
 .coeur {

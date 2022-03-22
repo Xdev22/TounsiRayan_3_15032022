@@ -75,6 +75,7 @@
 }
 
 
+
 /*Main cartes*/
 
 .main__cartes{
@@ -83,6 +84,7 @@
     &__h2{
         margin-left: 5%;
     }
+    /*boite qui contient les cartes*/
     &__box{
         display: flex;
         flex-direction: column;
@@ -91,6 +93,7 @@
     }
 }
 
+/*carte*/
 .main__cartes__carte{
     width: 90%;
     height: 285px;
@@ -126,4 +129,26 @@
     }
 }
 
+/*Modifications version PC*/
+@media screen and (min-width:992px) {
+    /*boite qui contient les fonctions de fonctionnement*/
+    .main__fonctionnement__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main__fonctionnement__fonction{
+        width: 30%;
+    }
+    /*boite qui contient les cartes restaurants*/
+    .main__cartes__box{
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 35px;
+    }
+    .main__cartes__carte{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
 
