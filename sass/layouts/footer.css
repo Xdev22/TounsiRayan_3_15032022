@@ -49,10 +49,9 @@ footer a {
     width: 100%;
     padding: 0 90px 20px 90px;
   }
-}
-
-.footer__logo {
-  font-size: xx-large;
-  padding: 20px 0 35px 0;
+  .footer__logo {
+    font-size: xx-large;
+    padding: 20px 0 35px 0;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

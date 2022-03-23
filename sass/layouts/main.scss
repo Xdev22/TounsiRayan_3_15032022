@@ -101,6 +101,7 @@
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 8px #C2C2C2;
+    position: relative;
     &__img{
         width: 100%;
         height: 205px;
@@ -109,9 +110,12 @@
         z-index: 0;
     }
     &__new{
-        z-index: 1;
         position: absolute;
-        top:20px
+        top:0px;
+        right:15px;
+        color: darken($color-tertiary,60);
+        background-color: $color-tertiary;
+        padding: 5px;
 
     }
     &__description{

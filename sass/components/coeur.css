@@ -1,3 +1,23 @@
+.coeur_remplie {
+  font-size: 25px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: absolute;
+  right: 20px;
+  color: transparent;
+  opacity: 0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.coeur_remplie:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .coeur {
   font-size: 25px;
 }
