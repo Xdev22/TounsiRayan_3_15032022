@@ -496,7 +496,7 @@ footer a {
 }
 
 /*Section menu*/
-.main__resto__entrees__carte {
+.main__resto__carte {
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,28 +516,28 @@ footer a {
   overflow: hidden;
 }
 
-.main__resto__entrees__carte__description {
+.main__resto__carte__description {
   padding-left: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.main__resto__entrees__carte__description h3 {
+.main__resto__carte__description h3 {
   margin-bottom: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.main__resto__entrees__carte__description p {
+.main__resto__carte__description p {
   margin-top: 0.1rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.main__resto__entrees__carte:hover .main__resto__check {
+.main__resto__carte:hover .main__resto__check {
   display: block;
   -webkit-animation: slidinright 700ms ease-in-out forwards;
           animation: slidinright 700ms ease-in-out forwards;
