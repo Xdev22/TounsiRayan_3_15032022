@@ -44,14 +44,17 @@ footer a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    padding: 0 90px 20px 90px;
+  }
+  .footer__services__service {
+    margin: 0 3%;
   }
   .footer__logo {
     font-size: xx-large;
-    padding: 20px 0 35px 0;
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=footer.css.map */

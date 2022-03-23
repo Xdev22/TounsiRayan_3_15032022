@@ -30,12 +30,14 @@ footer{
     .footer__services{
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
         width: 100%;
-        padding: 0 90px 20px 90px;
+        &__service{
+            margin: 0 3%;
+        }
     }
     .footer__logo{
         font-size: xx-large;
-        padding: 20px 0 35px 0;
+        padding-bottom: 10px;
     }
 }

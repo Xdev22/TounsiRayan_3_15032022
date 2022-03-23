@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Header page resto*/
 .header__resto a {
   color: black;
@@ -15,7 +16,7 @@
 
 .header__resto__banniere {
   width: 100%;
-  height: 60vh;
+  height: 365px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -59,18 +60,51 @@
   font-weight: 500;
 }
 
-/*main resto sections*/
-.main__resto__entrees {
+.main__resto__menu_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+/*Style de toutes les sections entrées/plats/desserts */
+.main__resto__menu {
   margin-bottom: 20px;
   width: 100%;
 }
 
-.main__resto__entrees h2 {
+.main__resto__menu h2 {
   font-size: large;
   font-weight: 300;
 }
 
-.main__resto__entrees .main__resto__border {
+.main__resto__menu .main__resto__border {
   border-bottom: 3px solid #99E2D0;
+}
+
+/*Modifications version PC*/
+@media screen and (min-width: 992px) {
+  .main__resto__menu_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
+  }
+  .main__resto__menu {
+    width: 30%;
+  }
 }
 /*# sourceMappingURL=resto.css.map */
