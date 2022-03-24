@@ -12,3 +12,21 @@
 }
 
 /*animation check page resto*/
+/*Apparition du check de droite*/
+@keyframes slidinright {
+    0%{width: 0%;}
+    100%{width: 20%;}
+    
+}
+
+/*rotation du check*/
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to  {transform: rotate(360deg);}
+  }
+
+ /*apparition des menus progressif*/ 
+@keyframes fadeIn {
+0% {opacity:0; transform:translateY(-30px);}
+100% {opacity:1;}
+}

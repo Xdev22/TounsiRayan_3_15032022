@@ -39,4 +39,65 @@
 }
 
 /*animation check page resto*/
+/*Apparition du check de droite*/
+@-webkit-keyframes slidinright {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes slidinright {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+/*rotation du check*/
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*apparition des menus progressif*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=keyframes.css.map */

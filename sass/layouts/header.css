@@ -2,10 +2,10 @@ header {
   text-align: center;
 }
 
-header--index {
+.header--index {
+  -webkit-box-shadow: 0px 2px 5px #cecece;
+          box-shadow: 0px 2px 5px #cecece;
   position: relative;
-  -webkit-box-shadow: 0px 4px 5px #cecece;
-          box-shadow: 0px 4px 5px #cecece;
 }
 
 .logo {

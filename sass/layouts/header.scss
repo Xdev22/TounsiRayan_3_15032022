@@ -1,10 +1,12 @@
 header{
     text-align: center;
-    &--index{
-        position: relative;
-        box-shadow: 0px 4px 5px #cecece;
-    }
 }
+
+.header--index{
+    box-shadow: 0px 2px 5px #cecece;
+    position: relative;
+}
+
 
 .logo{
     font-family: 'Shrikhand', sans-serif;

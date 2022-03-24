@@ -42,6 +42,68 @@
 }
 
 /*animation check page resto*/
+/*Apparition du check de droite*/
+@-webkit-keyframes slidinright {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+@keyframes slidinright {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 20%;
+  }
+}
+
+/*rotation du check*/
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*apparition des menus progressif*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -65,10 +127,10 @@ header {
   text-align: center;
 }
 
-header--index {
+.header--index {
+  -webkit-box-shadow: 0px 2px 5px #cecece;
+          box-shadow: 0px 2px 5px #cecece;
   position: relative;
-  -webkit-box-shadow: 0px 4px 5px #cecece;
-          box-shadow: 0px 4px 5px #cecece;
 }
 
 .logo {
@@ -403,6 +465,29 @@ footer a {
   }
 }
 
+.btn_commander {
+  height: 50px;
+  width: 215px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 6px #9c9c9c;
+          box-shadow: 0px 0px 6px #9c9c9c;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.btn_commander:hover {
+  opacity: 0.9;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 0px 6px #616060;
+          box-shadow: 0px 0px 6px #616060;
+}
+
 .coeur_remplie {
   font-size: 25px;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
@@ -567,28 +652,6 @@ footer a {
   border-bottom: 3px solid #99E2D0;
 }
 
-/*Modifications version PC*/
-@media screen and (min-width: 992px) {
-  .main__resto__menu_box {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 25px;
-  }
-  .main__resto__menu {
-    width: 30%;
-  }
-}
-
 /*Section menu*/
 .main__resto__carte {
   background-color: white;
@@ -642,29 +705,6 @@ footer a {
   margin-top: 2rem;
 }
 
-.btn_commander {
-  height: 50px;
-  width: 215px;
-  border-radius: 50px;
-  border: none;
-  color: white;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 6px #9c9c9c;
-          box-shadow: 0px 0px 6px #9c9c9c;
-  -webkit-transition: all 500ms;
-  transition: all 500ms;
-}
-
-.btn_commander:hover {
-  opacity: 0.9;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-box-shadow: 0px 0px 6px #616060;
-          box-shadow: 0px 0px 6px #616060;
-}
-
 .main__resto__check {
   display: none;
   text-align: center;
@@ -680,46 +720,7 @@ footer a {
           animation: rotate 700ms;
 }
 
-@-webkit-keyframes slidinright {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100px;
-  }
-}
-
-@keyframes slidinright {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100px;
-  }
-}
-
-@-webkit-keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes rotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
+/*Animation d'apparition des menus*/
 .fadein {
   -webkit-animation: fadeIn linear 2s;
           animation: fadeIn linear 2s;
@@ -740,25 +741,25 @@ footer a {
           animation-duration: 700ms;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
+/*Modifications version PC*/
+@media screen and (min-width: 992px) {
+  .main__resto__menu_box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 25px;
   }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-            transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
+  .main__resto__menu {
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
