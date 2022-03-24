@@ -719,4 +719,46 @@ footer a {
             transform: rotate(360deg);
   }
 }
+
+.fadein {
+  -webkit-animation: fadeIn linear 2s;
+          animation: fadeIn linear 2s;
+}
+
+.fadein--entrees {
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}
+
+.fadein--plats {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.fadein--desserts {
+  -webkit-animation-duration: 700ms;
+          animation-duration: 700ms;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
