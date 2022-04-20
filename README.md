@@ -1,6 +1,6 @@
 # TounsiRayan_3_15032022
 Création du site Ohmyfood!
-2ème projet de la formation OpenClassRooms.
+3ème projet de la formation OpenClassRooms.
 Pas de JavaScript ni de librairie.
 
 Scénario
